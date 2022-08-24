@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 1px;
+}
+section {
+  min-height: 97vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h6 {
+  font-size: 20px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+p {
+  color: hsl(150, 100%, 66%);
+  font-size: 12px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.container {
+  background: hsl(217, 19%, 24%);
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.divider-mobile {
+  display: none;
+}
+.divider-desktop {
+  margin-top: 2rem;
+}
+.dice {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+i:hover {
+  box-shadow: 0 0 2rem hsla(150, 100%, 66%, 0.75);
+}
+i {
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  padding: 10px 11px;
+  font-size: 26px;
+  position: absolute;
+  bottom: -20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .divider-mobile {
+    display: block;
+    margin-top: 2rem;
+  }
+  .divider-desktop {
+    display: none;
+  }
+}
